@@ -5,3 +5,6 @@ Dh = diff(h,r,1);
 cond = [Dh(5)== 0, Dh(100)==0, h(5)==50, h(100)==0];
 hsolution = dsolve(eqn,cond)
 ezplot(hsolution,[5,100])
+xlabel('radius, r (nm)') 
+ylabel('height, h (nm)') 
+title('h(r) plot for Biophys HW#3')
